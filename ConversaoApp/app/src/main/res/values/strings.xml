@@ -8,4 +8,6 @@
         Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Donec sollicitudin molestie malesuada.
         Donec rutrum congue leo eget malesuada.</string>
     <string name="ok">OK</string>
+    <string name="produtos">PRODUTOS</string>
+    <string name="android">Android</string>
 </resources>
