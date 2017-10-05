@@ -22,8 +22,11 @@
         <activity
             android:name=".TelaTres"
             android:label="@string/config" />
-        <activity android:name=".TelaQuatro"
-            android:label="@string/moedas"/>
+        <activity
+            android:name=".TelaQuatro"
+            android:label="@string/moedas" />
+        <activity android:name=".TelaCinco"
+            android:label="@string/sobre_o_app"/>
     </application>
 
 </manifest>
