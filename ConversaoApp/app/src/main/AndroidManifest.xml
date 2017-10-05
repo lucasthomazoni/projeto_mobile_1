@@ -19,6 +19,8 @@
         <activity
             android:name=".TelaDois"
             android:label="@string/produtos" />
+        <activity android:name=".TelaTres"
+            android:label="@string/config" />
     </application>
 
 </manifest>
