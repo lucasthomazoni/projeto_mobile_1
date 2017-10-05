@@ -10,4 +10,15 @@
     <string name="ok">OK</string>
     <string name="produtos">PRODUTOS</string>
     <string name="android">Android</string>
+    <string name="config">CONFIGURAÇÕES</string>
+    <string name="conversao_para">Conversão de R$ para:</string>
+    <string name="salvar">Salvar</string>
+
+    <string-array name="moedas">
+        <item>Dólar USD</item>
+        <item>Euro EUR</item>
+        <item>Iene JPY</item>
+        <item>Yuan CNY</item>
+    </string-array>
+
 </resources>
