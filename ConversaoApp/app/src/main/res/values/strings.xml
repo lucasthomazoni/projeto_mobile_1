@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">Conversão App</string>
+    <string name="produtos">PRODUTOS</string>
+    <string name="config">CONFIGURAÇÕES</string>
+    <string name="moedas">MOEDAS</string>
+    <string name="sobre_o_app">SOBRE O APP</string>
+
     <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
         Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.
         Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
@@ -7,20 +12,18 @@
         Curabitur aliquet quam id dui posuere blandit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
         Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Donec sollicitudin molestie malesuada.
         Donec rutrum congue leo eget malesuada.</string>
+
     <string name="ok">OK</string>
-    <string name="produtos">PRODUTOS</string>
-    <string name="android">Android</string>
-    <string name="config">CONFIGURAÇÕES</string>
-    <string name="conversao_para">Conversão de R$ para:</string>
     <string name="salvar">Salvar</string>
-    <string name="moedas">MOEDAS</string>
+    <string name="voltar">Voltar</string>
+    <string name="android">Android</string>
     <string name="dolar">Dólar</string>
     <string name="euro">Euro</string>
     <string name="iene">Iene</string>
     <string name="yuan">Yuan</string>
     <string name="guarani">Guarani</string>
     <string name="cotacao_em_reais">Cotação em Reais</string>
-
+    <string name="conversao_para">Conversão de R$ para:</string>
 
     <string name="valor_dolar">R$ 3,30</string>
     <string name="valor_euro">R$ 3,70</string>
