@@ -19,8 +19,11 @@
         <activity
             android:name=".TelaDois"
             android:label="@string/produtos" />
-        <activity android:name=".TelaTres"
+        <activity
+            android:name=".TelaTres"
             android:label="@string/config" />
+        <activity android:name=".TelaQuatro"
+            android:label="@string/moedas"/>
     </application>
 
 </manifest>

@@ -13,12 +13,27 @@
     <string name="config">CONFIGURAÇÕES</string>
     <string name="conversao_para">Conversão de R$ para:</string>
     <string name="salvar">Salvar</string>
+    <string name="moedas">MOEDAS</string>
+    <string name="dolar">Dólar</string>
+    <string name="euro">Euro</string>
+    <string name="iene">Iene</string>
+    <string name="yuan">Yuan</string>
+    <string name="guarani">Guarani</string>
+    <string name="cotacao_em_reais">Cotação em Reais</string>
+
+
+    <string name="valor_dolar">R$ 3,30</string>
+    <string name="valor_euro">R$ 3,70</string>
+    <string name="valor_iene">R$ 0,30</string>
+    <string name="valor_yuan">R$ 0,60</string>
+    <string name="valor_guarani">R$ 0,0001</string>
 
     <string-array name="moedas">
         <item>Dólar USD</item>
         <item>Euro EUR</item>
         <item>Iene JPY</item>
         <item>Yuan CNY</item>
+        <item>Guarani Gs</item>
     </string-array>
 
 </resources>
