@@ -6,69 +6,68 @@
     android:layout_height="match_parent"
     tools:context="com.grupodois.conversaoapp.TelaDois"
     android:orientation="vertical"
-    android:layout_marginLeft="10dp"
-    android:layout_marginRight="10dp"
-    android:layout_marginTop="10dp"
-    android:layout_marginBottom="10dp">
+    android:padding="20dp" >
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Digite o valor do produto em sua moeda base."
-        android:layout_gravity="center"/>
+        android:text="Valor do produto na moeda base: "
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/edtValor1"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="30dp"
+        android:gravity="center" />
 
     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
->
-
-        <EditText
-            android:id="@+id/editText"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="numberDecimal"
-            android:hint="Digite um valor"/>
+        android:layout_marginBottom="30dp">
 
         <TextView
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="MOEDA BASE"/>
+            android:text="Moeda a ser comparada:"
+            android:layout_gravity="center"
+            android:gravity="center" />
 
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerMoedas"
+            android:layout_gravity="center"
+            android:gravity="center"/>
     </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Digite o valor do produto na moeda que deseja comparar e após isso selecione a moeda"
+        android:text="Valor do produto na moeda a ser comparada:"
         android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/edtValor2"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="30dp"
         android:gravity="center"/>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="60dp">
-
-        <EditText
-            android:id="@+id/editText2"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="numberDecimal"
-            android:hint="Digite um valor"/>
-
-        <Spinner
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"></Spinner>
-
-    </LinearLayout>
 
     <Button
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calcular"/>
-
+        android:text="Comparar" />
 
 </LinearLayout>
