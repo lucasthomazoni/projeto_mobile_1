@@ -17,14 +17,5 @@ public class ActivityInicial extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(activity_inicial);
 
-        Button btnOK = (Button) findViewById(R.id.button);
-
-        btnOK.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(ActivityInicial.this, TelaDois.class));
-            }
-        });
-
     }
 }
