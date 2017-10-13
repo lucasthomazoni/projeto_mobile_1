@@ -21,7 +21,7 @@
             android:label="@string/conversao" />
         <activity
             android:name=".TelaTres"
-            android:label="@string/config" />
+            android:label="@string/sobre_o_app" />
         <activity
             android:name=".TelaQuatro"
             android:label="@string/moedas" />

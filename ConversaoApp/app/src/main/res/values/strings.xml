@@ -1,18 +1,51 @@
 <resources>
     <string name="app_name">Conversão App</string>
     <string name="conversao">CONVERSÃO</string>
-    <string name="produtos">PRODUTOS</string>
-    <string name="config">CONFIGURAÇÕES</string>
     <string name="moedas">MOEDAS</string>
     <string name="sobre_o_app">SOBRE O APP</string>
 
-    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-        Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.
-        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Sed eu ipsum id nunc bibendum imperdiet nec ut libero.
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        Donec eu rhoncus quam, nec eleifend tellus. Donec aliquet condimentum orci, a hendrerit sapien euismod vel.
+        Fusce in dignissim ex, sed placerat enim. Mauris feugiat placerat nisl.
+        Praesent sit amet ante congue, vulputate mauris vulputate, volutpat nulla.
+        Proin ultrices consectetur tortor, at rhoncus neque dapibus eget.
+        Donec sem mauris, sollicitudin ac mi vel, dignissim iaculis risus.
+        Morbi et sollicitudin ante, a aliquet nisl. Sed ornare velit ipsum, non efficitur magna imperdiet at.
+        Duis rhoncus purus id ipsum gravida lobortis.
 
-        Curabitur aliquet quam id dui posuere blandit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-        Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Donec sollicitudin molestie malesuada.
-        Donec rutrum congue leo eget malesuada.</string>
+        Nullam ultricies lectus et velit euismod pharetra.
+        Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        Sed tempus lectus sed mi venenatis, eu scelerisque lorem eleifend.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Curabitur felis metus, sollicitudin nec quam id, porttitor blandit diam.
+        Nulla aliquam tortor nec lectus ullamcorper cursus. Aliquam vitae sapien ligula.
+        Aenean ante tortor, feugiat at congue quis, congue ac arcu. Vestibulum condimentum pharetra sem nec pretium.
+
+        Sed semper dolor a erat feugiat dictum. Maecenas dignissim interdum nisl, eget vestibulum turpis sagittis ac.
+        Curabitur ac porttitor elit, suscipit tristique ligula. Etiam quis tempus felis.
+        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+        Nam in purus tempor, dignissim mi sed, sagittis diam.
+        Sed convallis, lacus eu pretium ullamcorper, enim tortor bibendum est, ac convallis neque tellus non erat.
+        Fusce pulvinar felis a lacus sodales porttitor. Sed augue quam, euismod eget tellus a, varius aliquet metus.
+        Vestibulum cursus faucibus blandit. Mauris nec sapien mollis, sagittis orci et, tempor ante.
+        Ut in diam et erat interdum ultrices eu quis nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+        Nulla placerat metus et mattis dignissim. Phasellus id nisl tempor, elementum quam eget, hendrerit dui.
+        Aliquam euismod commodo felis, vitae auctor neque pellentesque et.
+        Fusce vitae mi vel odio faucibus ullamcorper et in lorem. Ut eleifend lacinia elit.
+        Praesent ut erat at quam laoreet pulvinar a condimentum justo.
+        Aliquam imperdiet consequat urna, blandit blandit sem venenatis at.
+
+        Sed et porttitor orci, sit amet malesuada est. Suspendisse ex elit, eleifend vel facilisis a, tincidunt eget ligula.
+        Sed ac libero tortor. Mauris at finibus ex, non vestibulum justo. Sed et mi in lorem auctor aliquet at bibendum nisi.
+        Nullam consequat tellus sit amet lacinia laoreet.
+        Aliquam efficitur, nisi et porttitor tristique, leo eros dignissim risus, eget ullamcorper elit eros et nisl.
+        Pellentesque nec libero vulputate, venenatis nisl quis, mattis libero.
+        Nam ut augue ut sapien faucibus ultricies nec id risus. In luctus vitae libero non porta.
+        Pellentesque laoreet, est a dapibus pretium, mi sapien porta tortor, ut rhoncus dui sem eu dolor.
+        Aliquam eu accumsan justo.</string>
 
     <string name="ok">OK</string>
     <string name="salvar">Salvar</string>
