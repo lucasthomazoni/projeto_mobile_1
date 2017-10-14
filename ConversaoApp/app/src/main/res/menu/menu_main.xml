@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".TelaDois">
+
+    <item
+        android:id="@+id/action_conversao"
+        android:title="@string/conversao"
+        android:icon="@drawable/ic_calculator"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_moedas"
+        android:title="@string/moedas"
+        android:icon="@drawable/ic_attach_money"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_sobre"
+        android:title="@string/sobre_o_app" />
+
+</menu>

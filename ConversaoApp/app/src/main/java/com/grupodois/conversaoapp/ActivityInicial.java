@@ -10,12 +10,21 @@ import static com.grupodois.conversaoapp.R.layout.activity_inicial;
 
 public class ActivityInicial extends AppCompatActivity {
 
-    private Button btnOK;
+	private Button btnOK;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(activity_inicial);
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(activity_inicial);
 
-    }
+		Button btnOK = (Button) findViewById(R.id.button);
+
+		btnOK.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				startActivity(new Intent(ActivityInicial.this, TelaDois.class));
+			}
+		 });
+
+	}
 }

@@ -46,8 +46,15 @@
         Nam ut augue ut sapien faucibus ultricies nec id risus. In luctus vitae libero non porta.
         Pellentesque laoreet, est a dapibus pretium, mi sapien porta tortor, ut rhoncus dui sem eu dolor.
         Aliquam eu accumsan justo.</string>
+    <string name="moeda_a_ser_comparada">Moeda a ser comparada:</string>
+    <string name="valor_do_produto_na_moeda_base">Valor do produto na moeda base:</string>
+    <string name="valor_do_produto_na_moeda_a_ser_comparada">Valor do produto na moeda a ser comparada:</string>
+    <string name="selectiona_sua_moeda_base">Selecione sua moeda base:</string>
+    <string name="comparar">Comparar</string>
+    <string name="moeda_compensa">Compensa você comprar esse produto em </string>
 
     <string name="ok">OK</string>
+    <string name="proximo">Próximo</string>
     <string name="salvar">Salvar</string>
     <string name="voltar">Voltar</string>
     <string name="android">Android</string>

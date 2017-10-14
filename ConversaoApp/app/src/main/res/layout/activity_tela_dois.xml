@@ -6,12 +6,13 @@
     android:layout_height="match_parent"
     tools:context="com.grupodois.conversaoapp.TelaDois"
     android:orientation="vertical"
-    android:padding="20dp" >
+    android:padding="20dp"
+    android:weightSum="1">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Valor do produto na moeda base: "
+        android:text="@string/valor_do_produto_na_moeda_base"
         android:layout_gravity="center"
         android:gravity="center"
         android:layout_marginBottom="10dp" />
@@ -20,7 +21,7 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:id="@+id/edtValor1"
+        android:id="@+id/edtValorBase"
         android:inputType="numberDecimal"
         android:layout_marginBottom="30dp"
         android:gravity="center" />
@@ -35,7 +36,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Moeda a ser comparada:"
+            android:text="@string/moeda_a_ser_comparada"
             android:layout_gravity="center"
             android:gravity="center" />
 
@@ -50,7 +51,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Valor do produto na moeda a ser comparada:"
+        android:text="@string/valor_do_produto_na_moeda_a_ser_comparada"
         android:layout_gravity="center"
         android:gravity="center"
         android:layout_marginBottom="10dp" />
@@ -59,7 +60,7 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:id="@+id/edtValor2"
+        android:id="@+id/edtValorComparar"
         android:inputType="numberDecimal"
         android:layout_marginBottom="30dp"
         android:gravity="center"/>
@@ -68,6 +69,15 @@
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Comparar" />
+        android:text="@string/comparar"
+        android:id="@+id/btnComparar"/>
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text=""
+        android:layout_weight="0.22"
+        android:layout_marginTop="20dp"/>
 
 </LinearLayout>
