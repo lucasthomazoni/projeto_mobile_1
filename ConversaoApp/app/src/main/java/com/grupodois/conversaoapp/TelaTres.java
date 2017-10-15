@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 public class TelaTres extends AppCompatActivity {
 
@@ -14,6 +16,15 @@ public class TelaTres extends AppCompatActivity {
         setContentView(R.layout.activity_tela_tres);
 
         android.app.ActionBar actionBar = getActionBar();
+
+        Button btnVoltar = (Button) findViewById(R.id.btnVoltar);
+
+        btnVoltar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(TelaTres.this, TelaDois.class));
+            }
+        });
     }
 
     @Override
