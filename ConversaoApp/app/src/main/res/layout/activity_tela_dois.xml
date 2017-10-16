@@ -15,7 +15,8 @@
         android:text="@string/valor_do_produto_na_moeda_base"
         android:layout_gravity="center"
         android:gravity="center"
-        android:layout_marginBottom="10dp" />
+        android:layout_marginBottom="10dp"
+        android:textSize="18sp"/>
 
     <EditText
         android:layout_width="100dp"
@@ -38,14 +39,15 @@
             android:layout_height="wrap_content"
             android:text="@string/moeda_a_ser_comparada"
             android:layout_gravity="center"
-            android:gravity="center" />
+            android:gravity="center"
+            android:textSize="18sp"/>
 
         <Spinner
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/spinnerMoedas"
             android:layout_gravity="center"
-            android:gravity="center"/>
+            android:gravity="center" />
     </LinearLayout>
 
     <TextView
@@ -54,7 +56,8 @@
         android:text="@string/valor_do_produto_na_moeda_a_ser_comparada"
         android:layout_gravity="center"
         android:gravity="center"
-        android:layout_marginBottom="10dp" />
+        android:layout_marginBottom="10dp"
+        android:textSize="18sp"/>
 
     <EditText
         android:layout_width="100dp"
@@ -78,6 +81,7 @@
         android:layout_height="0dp"
         android:text=""
         android:layout_weight="0.22"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"/>
 
 </LinearLayout>

@@ -72,6 +72,7 @@
     <string name="GBP">GBP</string>
     <string name="cotacao_em_reais">Cotação em Reais</string>
     <string name="conversao_para">Conversão de R$ para:</string>
+    <string name="descricao_sobre_o_app">Aplicativo desenvolvido pelos alunos do 6º período do curso de Engenharia de Sofware da Universidade Tecnológica Federal do Paraná - Campus Dois Vizinhos. \n\n\nJuan Felipe Krassmann\nLucas Thomazoni</string>
 
     <string name="valor_dolar">R$ 3,30</string>
     <string name="valor_euro">R$ 3,70</string>
