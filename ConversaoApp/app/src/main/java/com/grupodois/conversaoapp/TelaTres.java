@@ -36,7 +36,7 @@ public class TelaTres extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item){
         int id = item.getItemId();
 
-        if (id == R.id.action_conversao){
+        if (id == R.id.action_comparacao){
             startActivity(new Intent(this, TelaDois.class).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK));
         }else if (id == R.id.action_moedas){
             startActivity(new Intent(this, TelaQuatro.class).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK));

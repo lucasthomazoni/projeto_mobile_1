@@ -20,7 +20,7 @@
         </activity>
         <activity
             android:name=".TelaDois"
-            android:label="@string/conversao" />
+            android:label="@string/comparacao" />
         <activity
             android:name=".TelaTres"
             android:label="@string/sobre_o_app" />

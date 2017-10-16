@@ -5,8 +5,8 @@
     tools:context=".TelaDois">
 
     <item
-        android:id="@+id/action_conversao"
-        android:title="@string/conversao"
+        android:id="@+id/action_comparacao"
+        android:title="@string/comparacao"
         android:icon="@drawable/ic_calculator"
         app:showAsAction="always"/>
 

@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">Conversão App</string>
-    <string name="conversao">CONVERSÃO</string>
-    <string name="moedas">MOEDAS</string>
-    <string name="sobre_o_app">SOBRE O APP</string>
+    <string name="app_name">App Name</string>
+    <string name="comparacao">Comparação</string>
+    <string name="moedas">Moedas</string>
+    <string name="sobre_o_app">Sobre o App</string>
 
     <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Sed eu ipsum id nunc bibendum imperdiet nec ut libero.
@@ -58,34 +58,45 @@
     <string name="salvar">Salvar</string>
     <string name="voltar">Voltar</string>
     <string name="android">Android</string>
-    <string name="reais">Reais</string>
-    <string name="BRL">BRL</string>
+
+    <!--Moedas-->
     <string name="dolar">Dólar</string>
     <string name="USD">USD</string>
     <string name="euro">Euro</string>
     <string name="EUR">EUR</string>
     <string name="iene">Iene</string>
     <string name="JPY">JPY</string>
+    <string name="libra_esterlina">Libra Esterlina</string>
+    <string name="GBP">GBP</string>
+    <string name="pesos_chilenos">Pesos Chilenos</string>
+    <string name="CLP">CLP</string>
+    <string name="reais">Reais</string>
+    <string name="BRL">BRL</string>
+    
     <string name="yuan">Yuan</string>
     <string name="CNY">CNY</string>
-    <string name="libra_esterlina">Libra</string>
-    <string name="GBP">GBP</string>
-    <string name="cotacao_em_reais">Cotação em Reais</string>
+
+
+    <string name="cotacao_em">Cotação em:</string>
     <string name="conversao_para">Conversão de R$ para:</string>
     <string name="descricao_sobre_o_app">Aplicativo desenvolvido pelos alunos do 6º período do curso de Engenharia de Sofware da Universidade Tecnológica Federal do Paraná - Campus Dois Vizinhos. \n\n\nJuan Felipe Krassmann\nLucas Thomazoni</string>
 
-    <string name="valor_dolar">R$ 3,30</string>
-    <string name="valor_euro">R$ 3,70</string>
-    <string name="valor_iene">R$ 0,30</string>
-    <string name="valor_yuan">R$ 0,60</string>
-    <string name="valor_libra_esterlina">R$ 4,17</string>
+    <string name="valor_dolar">155,00</string>
+    <string name="valor_euro">166,00</string>
+    <string name="valor_iene">177,00</string>
+    <string name="valor_libra_esterlina">188,00</string>
+    <string name="valor_pesos_chilenos">199,00</string>
+    <string name="valor_reais">200,00</string>
+
+    <string name="valor_yuan">999,00</string>
 
     <string-array name="moedas">
         <item>Dólar USD</item>
         <item>Euro EUR</item>
         <item>Iene JPY</item>
-        <item>Yuan CNY</item>
         <item>Libra GBP</item>
+        <item>Pesos Chilenos CLP</item>
+        <item>Reais BRL</item>
     </string-array>
 
 </resources>

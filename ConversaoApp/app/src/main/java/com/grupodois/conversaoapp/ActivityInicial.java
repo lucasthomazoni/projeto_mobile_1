@@ -53,10 +53,10 @@ public class ActivityInicial extends AppCompatActivity {
                 RadioButton radioButton = (RadioButton) findViewById(selectedId);
 
                 if (radioButton != null) {
-                    String myUrl = "https://api.fixer.io/latest?base=" + radioButton.getTag().toString();
-                    funcaoTeste(myUrl);
-                    Log.i("request", myUrl);
-//                    startActivity(new Intent(ActivityInicial.this, TelaDois.class));
+//                    String myUrl = "https://api.fixer.io/latest?base=" + radioButton.getTag().toString();
+//                    funcaoTeste(myUrl);
+//                    Log.i("request", myUrl);
+                    startActivity(new Intent(ActivityInicial.this, TelaDois.class));
                 } else {
                     Toast.makeText(ActivityInicial.this, "Escolha uma moeda para começar", Toast.LENGTH_LONG).show();
                 }
@@ -64,61 +64,61 @@ public class ActivityInicial extends AppCompatActivity {
         });
     }
 
-    private void requisicaoHttp(String url) {
+//    private void requisicaoHttp(String url) {
+//
+//        final TextView responserino = (TextView) findViewById(R.id.responserino);
+//
+//        JsonObjectRequest jsObjRequest = new JsonObjectRequest
+//                (Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
+//
+//                    @Override
+//                    public void onResponse(JSONObject response) {
+//                        responserino.setText("Response:");
+//                        Log.i("response", "mds do ceu berg");
+//                    }
+//                }, new Response.ErrorListener() {
+//
+//                    @Override
+//                    public void onErrorResponse(VolleyError error) {
+//                        Log.i("error", error.toString());
+//                    }
+//                });
+//    }
 
-        final TextView responserino = (TextView) findViewById(R.id.responserino);
-
-        JsonObjectRequest jsObjRequest = new JsonObjectRequest
-                (Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
-
-                    @Override
-                    public void onResponse(JSONObject response) {
-                        responserino.setText("Response:");
-                        Log.i("response", "mds do ceu berg");
-                    }
-                }, new Response.ErrorListener() {
-
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        Log.i("error", error.toString());
-                    }
-                });
-    }
-
-    private void funcaoTeste(String myUrl){
-
-        String url = myUrl;
-
-        final ProgressDialog pDialog = new ProgressDialog(this);
-        pDialog.setMessage("Loading...");
-        pDialog.show();
-
-        StringRequest strReq = new StringRequest(Request.Method.GET,
-                url, new Response.Listener<String>() {
-
-            @Override
-            public void onResponse(String response) {
-                Log.d("response", response.toString());
-                pDialog.hide();
-            }
-        }, new Response.ErrorListener() {
-
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                VolleyLog.d("error", "Error: " + error.getMessage());
-                pDialog.hide();
-            }
-        }){
-            /**
-             * Passing some request headers
-             * */
-            @Override
-            public Map<String, String> getHeaders() throws AuthFailureError {
-                HashMap<String, String> headers = new HashMap<String, String>();
-                headers.put("Content-Type", "application/json");
-                return headers;
-            }
-        };
-    }
+//    private void funcaoTeste(String myUrl){
+//
+//        String url = myUrl;
+//
+//        final ProgressDialog pDialog = new ProgressDialog(this);
+//        pDialog.setMessage("Loading...");
+//        pDialog.show();
+//
+//        StringRequest strReq = new StringRequest(Request.Method.GET,
+//                url, new Response.Listener<String>() {
+//
+//            @Override
+//            public void onResponse(String response) {
+//                Log.d("response", response.toString());
+//                pDialog.hide();
+//            }
+//        }, new Response.ErrorListener() {
+//
+//            @Override
+//            public void onErrorResponse(VolleyError error) {
+//                VolleyLog.d("error", "Error: " + error.getMessage());
+//                pDialog.hide();
+//            }
+//        }){
+//            /**
+//             * Passing some request headers
+//             * */
+//            @Override
+//            public Map<String, String> getHeaders() throws AuthFailureError {
+//                HashMap<String, String> headers = new HashMap<String, String>();
+//                headers.put("Content-Type", "application/json");
+//                return headers;
+//            }
+//        };
+//    }
 
 }
