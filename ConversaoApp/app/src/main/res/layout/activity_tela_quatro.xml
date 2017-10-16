@@ -1,143 +1,178 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.grupodois.conversaoapp.TelaQuatro"
-    android:orientation="vertical"
-    android:padding="20dp">
+    tools:context="com.grupodois.conversaoapp.TelaQuatro">
 
-    <TextView
+    <ImageView
+        android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_attach_money"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="37dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/textView17"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_euro_symbol"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="125dp"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignStart="@+id/imageView4"
+        android:layout_marginTop="54dp" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="228dp"
+        android:layout_below="@+id/imageView6"
+        android:layout_alignStart="@+id/imageView6"
+        android:layout_marginTop="47dp" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic__"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="324dp"
+        android:layout_below="@+id/imageView11"
+        android:layout_alignStart="@+id/imageView11"
+        android:layout_marginTop="45dp" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView12"
+        android:layout_below="@+id/imageView12"
+        android:layout_marginTop="35dp"
+        app:srcCompat="@drawable/ic_pound" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dolar"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="53dp"
+        android:layout_marginStart="17dp"
+        android:layout_alignBottom="@+id/imageView4"
+        android:layout_toEndOf="@+id/imageView4"
+        android:layout_marginBottom="14dp"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView12"
+        android:layout_alignTop="@+id/imageView6"
+        android:layout_marginTop="12dp"
+        android:text="@string/euro"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView13"
+        android:layout_alignTop="@+id/imageView11"
+        android:layout_marginTop="12dp"
+        android:text="@string/iene"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView14"
+        android:layout_alignTop="@+id/imageView12"
+        android:layout_marginTop="12dp"
+        android:text="@string/yuan"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="@string/cotacao_em_reais"
-        android:textSize="22sp"
-        android:layout_gravity="center"/>
+        android:textSize="25sp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageView4" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_alignStart="@+id/textView15"
+        android:layout_alignTop="@+id/imageView14"
+        android:layout_marginTop="22dp"
+        android:text="@string/libra_esterlina"
+        android:textSize="25sp"/>
 
-        <ImageView
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:src="@drawable/ic_attach_money"/>
-
-        <TextView
-            android:layout_width="175dp"
-            android:layout_height="75dp"
-            android:text="@string/dolar"
-            android:textSize="18sp"/>
-
-        <TextView
-            android:layout_width="120dp"
-            android:layout_height="75dp"
-            android:text="@string/valor_dolar"
-            android:gravity="center"
-            android:textSize="18sp"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:text="@string/valor_dolar"
+        android:textSize="25sp"
+        android:layout_alignBaseline="@+id/textView12"
+        android:layout_alignBottom="@+id/textView12"
+        android:layout_alignStart="@+id/textView20" />
 
-        <ImageView
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:src="@drawable/ic_euro_symbol"/>
-
-        <TextView
-            android:layout_width="175dp"
-            android:layout_height="75dp"
-            android:text="@string/euro"
-            android:textSize="18sp"/>
-
-        <TextView
-            android:layout_width="120dp"
-            android:layout_height="75dp"
-            android:text="@string/valor_euro"
-            android:gravity="center"
-            android:textSize="18sp"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:text="@string/valor_euro"
+        android:textSize="25sp"
+        android:layout_alignBaseline="@+id/textView13"
+        android:layout_alignBottom="@+id/textView13"
+        android:layout_alignStart="@+id/textView21" />
 
-        <ImageView
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:src="@drawable/ic_"/>
-
-        <TextView
-            android:layout_width="175dp"
-            android:layout_height="wrap_content"
-            android:text="@string/iene"
-            android:textSize="18sp"/>
-
-        <TextView
-            android:layout_width="120dp"
-            android:layout_height="75dp"
-            android:text="@string/valor_iene"
-            android:gravity="center"
-            android:textSize="18sp"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:text="@string/valor_iene"
+        android:textSize="25sp"
+        android:layout_alignBaseline="@+id/textView14"
+        android:layout_alignBottom="@+id/textView14"
+        android:layout_alignStart="@+id/textView22" />
 
-        <ImageView
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:src="@drawable/ic__"/>
-
-        <TextView
-            android:layout_width="175dp"
-            android:layout_height="wrap_content"
-            android:text="@string/yuan"
-            android:textSize="18sp"/>
-
-        <TextView
-            android:layout_width="120dp"
-            android:layout_height="75dp"
-            android:text="@string/valor_yuan"
-            android:gravity="center"
-            android:textSize="18sp"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:text="@string/valor_yuan"
+        android:textSize="25sp"
+        android:layout_alignBaseline="@+id/textView15"
+        android:layout_alignBottom="@+id/textView15"
+        android:layout_alignStart="@+id/textView23" />
 
-        <ImageView
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:src="@drawable/ic_gs"/>
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/valor_libra_esterlina"
+        android:textSize="25sp"
+        android:layout_alignBaseline="@+id/textView19"
+        android:layout_alignBottom="@+id/textView19"
+        android:layout_toEndOf="@+id/textView19"
+        android:layout_marginStart="14dp" />
 
-        <TextView
-            android:layout_width="175dp"
-            android:layout_height="wrap_content"
-            android:text="@string/guarani"
-            android:textSize="18sp"/>
 
-        <TextView
-            android:layout_width="120dp"
-            android:layout_height="75dp"
-            android:text="@string/valor_guarani"
-            android:gravity="center"
-            android:textSize="18sp"/>
-
-    </LinearLayout>
-
-</LinearLayout>
+</RelativeLayout>
