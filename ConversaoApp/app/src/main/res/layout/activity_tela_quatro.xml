@@ -58,7 +58,7 @@
         android:layout_alignStart="@+id/imageView12"
         android:layout_below="@+id/imageView12"
         android:layout_marginTop="35dp"
-        app:srcCompat="@drawable/ic_gs" />
+        app:srcCompat="@drawable/ic_pound" />
 
     <TextView
         android:id="@+id/textView12"
@@ -120,54 +120,59 @@
         android:layout_alignStart="@+id/textView15"
         android:layout_alignTop="@+id/imageView14"
         android:layout_marginTop="22dp"
-        android:text="@string/guarani"
+        android:text="@string/libra_esterlina"
         android:textSize="25sp"/>
 
     <TextView
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/textView12"
-        android:layout_marginEnd="76dp"
         android:text="@string/valor_dolar"
-        android:textSize="25sp"/>
+        android:textSize="25sp"
+        android:layout_alignBaseline="@+id/textView12"
+        android:layout_alignBottom="@+id/textView12"
+        android:layout_alignStart="@+id/textView20" />
 
     <TextView
         android:id="@+id/textView20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView18"
-        android:layout_alignTop="@+id/textView13"
         android:text="@string/valor_euro"
-        android:textSize="25sp"/>
+        android:textSize="25sp"
+        android:layout_alignBaseline="@+id/textView13"
+        android:layout_alignBottom="@+id/textView13"
+        android:layout_alignStart="@+id/textView21" />
 
     <TextView
         android:id="@+id/textView21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView20"
-        android:layout_alignTop="@+id/textView14"
         android:text="@string/valor_iene"
-        android:textSize="25sp"/>
+        android:textSize="25sp"
+        android:layout_alignBaseline="@+id/textView14"
+        android:layout_alignBottom="@+id/textView14"
+        android:layout_alignStart="@+id/textView22" />
 
     <TextView
         android:id="@+id/textView22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/textView21"
-        android:layout_alignTop="@+id/textView15"
         android:text="@string/valor_yuan"
-        android:textSize="25sp"/>
+        android:textSize="25sp"
+        android:layout_alignBaseline="@+id/textView15"
+        android:layout_alignBottom="@+id/textView15"
+        android:layout_alignStart="@+id/textView23" />
 
     <TextView
         android:id="@+id/textView23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView22"
-        android:layout_alignTop="@+id/textView19"
-        android:text="@string/valor_guarani"
-        android:textSize="25sp"/>
+        android:text="@string/valor_libra_esterlina"
+        android:textSize="25sp"
+        android:layout_alignBaseline="@+id/textView19"
+        android:layout_alignBottom="@+id/textView19"
+        android:layout_toEndOf="@+id/textView19"
+        android:layout_marginStart="14dp" />
 
 
 </RelativeLayout>

@@ -58,11 +58,18 @@
     <string name="salvar">Salvar</string>
     <string name="voltar">Voltar</string>
     <string name="android">Android</string>
+    <string name="reais">Reais</string>
+    <string name="BRL">BRL</string>
     <string name="dolar">Dólar</string>
+    <string name="USD">USD</string>
     <string name="euro">Euro</string>
+    <string name="EUR">EUR</string>
     <string name="iene">Iene</string>
+    <string name="JPY">JPY</string>
     <string name="yuan">Yuan</string>
-    <string name="guarani">Guarani</string>
+    <string name="CNY">CNY</string>
+    <string name="libra_esterlina">Libra</string>
+    <string name="GBP">GBP</string>
     <string name="cotacao_em_reais">Cotação em Reais</string>
     <string name="conversao_para">Conversão de R$ para:</string>
 
@@ -70,14 +77,14 @@
     <string name="valor_euro">R$ 3,70</string>
     <string name="valor_iene">R$ 0,30</string>
     <string name="valor_yuan">R$ 0,60</string>
-    <string name="valor_guarani">R$ 0,0001</string>
+    <string name="valor_libra_esterlina">R$ 4,17</string>
 
     <string-array name="moedas">
         <item>Dólar USD</item>
         <item>Euro EUR</item>
         <item>Iene JPY</item>
         <item>Yuan CNY</item>
-        <item>Guarani Gs</item>
+        <item>Libra GBP</item>
     </string-array>
 
 </resources>
