@@ -60,15 +60,6 @@
             android:tag="@string/GBP"/>
 
         <RadioButton
-            android:id="@+id/CNY"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/pesos_chilenos"
-            android:textSize="@dimen/sp_20"
-            android:layout_marginBottom="@dimen/dp_15"
-            android:tag="@string/CLP"/>
-
-        <RadioButton
             android:id="@+id/radioButtonBRL"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

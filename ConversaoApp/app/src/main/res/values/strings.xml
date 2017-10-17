@@ -68,8 +68,6 @@
     <string name="JPY">JPY</string>
     <string name="libra_esterlina">Libra Esterlina</string>
     <string name="GBP">GBP</string>
-    <string name="pesos_chilenos">Pesos Chilenos</string>
-    <string name="CLP">CLP</string>
     <string name="reais">Reais</string>
     <string name="BRL">BRL</string>
     
@@ -85,17 +83,13 @@
     <string name="valor_euro">166,00</string>
     <string name="valor_iene">177,00</string>
     <string name="valor_libra_esterlina">188,00</string>
-    <string name="valor_pesos_chilenos">199,00</string>
     <string name="valor_reais">200,00</string>
-
-    <string name="valor_yuan">999,00</string>
 
     <string-array name="moedas">
         <item>Dólar USD</item>
         <item>Euro EUR</item>
         <item>Iene JPY</item>
         <item>Libra GBP</item>
-        <item>Pesos Chilenos CLP</item>
         <item>Reais BRL</item>
     </string-array>
 

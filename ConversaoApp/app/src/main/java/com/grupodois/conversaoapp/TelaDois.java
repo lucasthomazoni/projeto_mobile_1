@@ -15,7 +15,7 @@ import android.widget.TextView;
 
 public class TelaDois extends AppCompatActivity {
 
-    private String[] moedas = new String[]{"Dólar", "Euro", "Iene", "Libra Esterlina", "Pesos Chilenos", "Reais"};
+    private String[] moedas = new String[]{"Dólar", "Euro", "Iene", "Libra Esterlina", "Reais"};
 
     private Spinner spinnerMoedas;
 
