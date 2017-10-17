@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.grupodois.conversaoapp.ActivityInicial"
     android:orientation="vertical"
-    android:padding="20dp">
+    android:padding="@dimen/dp_20">
 
     <TextView
         android:layout_width="wrap_content"
@@ -14,22 +14,22 @@
         android:text="@string/selectiona_sua_moeda_base"
         android:layout_gravity="center"
         android:gravity="center"
-        android:layout_marginBottom="20dp"
-        android:textSize="18sp"/>
+        android:layout_marginBottom="@dimen/dp_20"
+        android:textSize="@dimen/sp_18"/>
 
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/radioGroupMoedas"
-        android:layout_marginBottom="20dp">
+        android:layout_marginBottom="@dimen/dp_20">
 
         <RadioButton
             android:id="@+id/radioButtonUSD"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/dolar"
-            android:textSize="20sp"
-            android:layout_marginBottom="15dp"
+            android:textSize="@dimen/sp_20"
+            android:layout_marginBottom="@dimen/dp_15"
             android:tag="@string/USD"/>
 
         <RadioButton
@@ -37,8 +37,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/euro"
-            android:textSize="20sp"
-            android:layout_marginBottom="15dp"
+            android:textSize="@dimen/sp_20"
+            android:layout_marginBottom="@dimen/dp_15"
             android:tag="@string/EUR"/>
 
         <RadioButton
@@ -46,8 +46,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/iene"
-            android:textSize="20sp"
-            android:layout_marginBottom="15dp"
+            android:textSize="@dimen/sp_20"
+            android:layout_marginBottom="@dimen/dp_15"
             android:tag="@string/JPY"/>
 
         <RadioButton
@@ -55,8 +55,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/libra_esterlina"
-            android:textSize="20sp"
-            android:layout_marginBottom="15dp"
+            android:textSize="@dimen/sp_20"
+            android:layout_marginBottom="@dimen/dp_15"
             android:tag="@string/GBP"/>
 
         <RadioButton
@@ -64,8 +64,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/pesos_chilenos"
-            android:textSize="20sp"
-            android:layout_marginBottom="15dp"
+            android:textSize="@dimen/sp_20"
+            android:layout_marginBottom="@dimen/dp_15"
             android:tag="@string/CLP"/>
 
         <RadioButton
@@ -73,7 +73,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/reais"
-            android:textSize="20sp"
+            android:textSize="@dimen/sp_20"
             android:tag="@string/BRL"/>
 
     </RadioGroup>

@@ -6,8 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.grupodois.conversaoapp.TelaDois"
     android:orientation="vertical"
-    android:padding="20dp"
-    android:weightSum="1">
+    android:padding="@dimen/dp_20">
 
     <TextView
         android:layout_width="wrap_content"
@@ -15,16 +14,16 @@
         android:text="@string/valor_do_produto_na_moeda_base"
         android:layout_gravity="center"
         android:gravity="center"
-        android:layout_marginBottom="10dp"
-        android:textSize="18sp"/>
+        android:layout_marginBottom="@dimen/dp_10"
+        android:textSize="@dimen/sp_18"/>
 
     <EditText
-        android:layout_width="200dp"
+        android:layout_width="@dimen/dp_200"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:id="@+id/edtValorBase"
         android:inputType="numberDecimal"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="@dimen/dp_30"
         android:gravity="center" />
 
     <LinearLayout
@@ -32,7 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:orientation="horizontal"
-        android:layout_marginBottom="30dp">
+        android:layout_marginBottom="@dimen/dp_30">
 
         <TextView
             android:layout_width="wrap_content"
@@ -40,7 +39,7 @@
             android:text="@string/moeda_a_ser_comparada"
             android:layout_gravity="center"
             android:gravity="center"
-            android:textSize="18sp"/>
+            android:textSize="@dimen/sp_18"/>
 
         <Spinner
             android:layout_width="wrap_content"
@@ -56,16 +55,16 @@
         android:text="@string/valor_do_produto_na_moeda_a_ser_comparada"
         android:layout_gravity="center"
         android:gravity="center"
-        android:layout_marginBottom="10dp"
-        android:textSize="18sp"/>
+        android:layout_marginBottom="@dimen/dp_10"
+        android:textSize="@dimen/sp_18"/>
 
     <EditText
-        android:layout_width="200dp"
+        android:layout_width="@dimen/dp_200"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:id="@+id/edtValorComparar"
         android:inputType="numberDecimal"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="@dimen/dp_30"
         android:gravity="center"/>
 
     <Button
@@ -80,8 +79,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="RESULTADO AQUI"
-        android:layout_marginTop="20dp"
-        android:textSize="25sp"
+        android:layout_marginTop="@dimen/dp_20"
+        android:textSize="@dimen/sp_25"
         android:gravity="center"/>
 
 </LinearLayout>

@@ -6,27 +6,27 @@
     android:layout_height="match_parent"
     tools:context="com.grupodois.conversaoapp.TelaQuatro"
     android:orientation="vertical"
-    android:padding="20dp">
+    android:padding="@dimen/dp_20">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_marginBottom="20dp">
+        android:layout_marginBottom="@dimen/dp_20">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/cotacao_em"
-            android:textSize="20sp"
-            android:layout_marginRight="5dp"/>
+            android:textSize="@dimen/sp_20"
+            android:layout_marginRight="@dimen/dp_5"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/dolar"
-            android:textSize="20sp"/>
+            android:textSize="@dimen/sp_20"/>
 
     </LinearLayout>
 
@@ -36,26 +36,26 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_marginBottom="20dp">
+        android:layout_marginBottom="@dimen/dp_20">
 
         <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
             android:src="@drawable/dolar" />
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="200dp"
+            android:layout_width="@dimen/dp_200"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="@dimen/dp_10"
             android:text="@string/dolar"
-            android:textSize="18sp" />
+            android:textSize="@dimen/sp_18" />
 
         <TextView
-            android:layout_width="96dp"
+            android:layout_width="@dimen/dp_96"
             android:layout_height="wrap_content"
             android:text="@string/valor_dolar"
-            android:textSize="18sp"
+            android:textSize="@dimen/sp_18"
             android:gravity="center"/>
 
     </LinearLayout>
@@ -65,25 +65,25 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_marginBottom="20dp">
+        android:layout_marginBottom="@dimen/dp_20">
 
         <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
             android:src="@drawable/euro" />
 
         <TextView
-            android:layout_width="200dp"
+            android:layout_width="@dimen/dp_200"
             android:layout_height="wrap_content"
             android:text="@string/euro"
-            android:textSize="18sp"
-            android:layout_marginLeft="10dp"/>
+            android:textSize="@dimen/sp_18"
+            android:layout_marginLeft="@dimen/dp_10"/>
 
         <TextView
-            android:layout_width="96dp"
+            android:layout_width="@dimen/dp_96"
             android:layout_height="wrap_content"
             android:text="@string/valor_euro"
-            android:textSize="18sp"
+            android:textSize="@dimen/sp_18"
             android:gravity="center"/>
 
     </LinearLayout>
@@ -93,25 +93,25 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_marginBottom="20dp">
+        android:layout_marginBottom="@dimen/dp_20">
 
         <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
             android:src="@drawable/iene" />
 
         <TextView
-            android:layout_width="200dp"
+            android:layout_width="@dimen/dp_200"
             android:layout_height="wrap_content"
             android:text="@string/iene"
-            android:textSize="18sp"
-            android:layout_marginLeft="10dp"/>
+            android:textSize="@dimen/sp_18"
+            android:layout_marginLeft="@dimen/dp_10"/>
 
         <TextView
-            android:layout_width="96dp"
+            android:layout_width="@dimen/dp_96"
             android:layout_height="wrap_content"
             android:text="@string/valor_iene"
-            android:textSize="18sp"
+            android:textSize="@dimen/sp_18"
             android:gravity="center"/>
 
     </LinearLayout>
@@ -121,25 +121,25 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_marginBottom="20dp">
+        android:layout_marginBottom="@dimen/dp_20">
 
         <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
             android:src="@drawable/libra_esterlina" />
 
         <TextView
-            android:layout_width="200dp"
+            android:layout_width="@dimen/dp_200"
             android:layout_height="wrap_content"
             android:text="@string/libra_esterlina"
-            android:textSize="18sp"
-            android:layout_marginLeft="10dp"/>
+            android:textSize="@dimen/sp_18"
+            android:layout_marginLeft="@dimen/dp_10"/>
 
         <TextView
-            android:layout_width="96dp"
+            android:layout_width="@dimen/dp_96"
             android:layout_height="wrap_content"
             android:text="@string/valor_libra_esterlina"
-            android:textSize="18sp"
+            android:textSize="@dimen/sp_18"
             android:gravity="center"/>
 
     </LinearLayout>
@@ -149,25 +149,25 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_marginBottom="20dp">
+        android:layout_marginBottom="@dimen/dp_20">
 
         <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
             android:src="@drawable/peso_chileno" />
 
         <TextView
-            android:layout_width="200dp"
+            android:layout_width="@dimen/dp_200"
             android:layout_height="wrap_content"
             android:text="@string/pesos_chilenos"
-            android:textSize="18sp"
-            android:layout_marginLeft="10dp"/>
+            android:textSize="@dimen/sp_18"
+            android:layout_marginLeft="@dimen/dp_10"/>
 
         <TextView
-            android:layout_width="96dp"
+            android:layout_width="@dimen/dp_96"
             android:layout_height="wrap_content"
             android:text="@string/valor_pesos_chilenos"
-            android:textSize="18sp"
+            android:textSize="@dimen/sp_18"
             android:gravity="center"/>
 
     </LinearLayout>
@@ -177,25 +177,25 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_marginBottom="20dp">
+        android:layout_marginBottom="@dimen/dp_20">
 
         <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
             android:src="@drawable/real" />
 
         <TextView
-            android:layout_width="200dp"
+            android:layout_width="@dimen/dp_200"
             android:layout_height="wrap_content"
             android:text="@string/reais"
-            android:textSize="18sp"
-            android:layout_marginLeft="10dp"/>
+            android:textSize="@dimen/sp_18"
+            android:layout_marginLeft="@dimen/dp_10"/>
 
         <TextView
-            android:layout_width="96dp"
+            android:layout_width="@dimen/dp_96"
             android:layout_height="wrap_content"
             android:text="@string/valor_reais"
-            android:textSize="18sp"
+            android:textSize="@dimen/sp_18"
             android:gravity="center"/>
 
     </LinearLayout>
