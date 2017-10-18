@@ -22,6 +22,10 @@ public class TelaDois extends AppCompatActivity {
 
     private TextView textResultado;
 
+    private TextView textDiferenca;
+
+    private TextView textConvertido;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +35,8 @@ public class TelaDois extends AppCompatActivity {
 
         Button btnComparar = (Button) findViewById(R.id.btnComparar);
         textResultado = (TextView) findViewById(R.id.textResultado);
+        textDiferenca = (TextView) findViewById(R.id.textDiferenca);
+        textConvertido = (TextView) findViewById(R.id.textConvertido);
         final EditText moedaBase = (EditText) findViewById(R.id.edtValorBase);
         final EditText moedaComparada = (EditText) findViewById(R.id.edtValorComparar);
 
@@ -54,7 +60,6 @@ public class TelaDois extends AppCompatActivity {
         btnComparar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.i("spinner", spinnerMoedas.getSelectedItem().toString());
                compararMoedas( Double.valueOf(moedaBase.getText().toString()) , Double.valueOf(moedaComparada.getText().toString()), spinnerMoedas.getSelectedItem().toString());
             }
         });
@@ -86,36 +91,52 @@ public class TelaDois extends AppCompatActivity {
         Double taxa = null;
         switch (base_taxa){
             case "Dólar":
-                Log.i("entrou", "usd");
                 taxa = ((CurrencyRates) this.getApplication()).getUSD();
                 break;
             case "Euro":
-                Log.i("entrou", "eur");
                 taxa = ((CurrencyRates) this.getApplication()).getEUR();
                 break;
             case "Libra Esterlina":
-                Log.i("entrou", "gbp");
                 taxa = ((CurrencyRates) this.getApplication()).getGBP();
                 break;
             case "Iene":
-                Log.i("entrou", "jpy");
                 taxa = ((CurrencyRates) this.getApplication()).getJPY();
                 break;
             case "Reais":
-                Log.i("entrou", "brl");
                 taxa = ((CurrencyRates) this.getApplication()).getBRL();
                 break;
 
             default:
-                Log.i("error", "deu pau fdp");
         }
 
+
+//EAE MEN VEJA SE VC CONSEGUE RESOLVER ISSO AQUI EM BAIXO!!!!!
+//ASSIM, ACRESCENTEI DUAS VARIÁVEIS,
+//UMA COM O VALOR DA MOEDA COMPARADA CONVERTIDO PARA A MOEDA BASE
+//E UMA COM A DIFERENÇA DE PREÇOS.
+//MAS HÁ UM PROBLEMA, EU NÃO SEI COMO MOSTRAR O VALOR DAS VARIÁVEIS NO TEXTVIEW
+//SEM SER DO JEITO QUE EU COLOQUEI.
+//O PROBLEMA É QUE DO JEITO QUE EU COLOQUEI ELE NÃO GUARDA AS STRINGS, MAS SIM TEXTO SOLTO.
+//
+//VÊ SE TU SABE E ME DE UM TOQUE. FLWW.
+
+
         Double resultado = moedaBase * taxa;
+        Double mCompConvParaBase = moedaComparar / taxa;
+        Double diferenca = mCompConvParaBase - moedaBase;
 
         if (resultado < moedaComparar){
             textResultado.setText(getText(R.string.moeda_compensa_base));
+            textConvertido.setText("Valor da moeda comparada convertido para a moeda base: " + mCompConvParaBase);
+            textDiferenca.setText("Diferença: " + diferenca);
         }else if(resultado > moedaComparar){
             textResultado.setText(getText(R.string.moeda_compensa_comparar));
+            textConvertido.setText("Valor da moeda comparada convertido para a moeda base: " + mCompConvParaBase);
+            textDiferenca.setText("Diferença: " + diferenca);
+        }else {
+            textResultado.setText(getText(R.string.moeda_valores_iguais));
+            textConvertido.setText("Valor da moeda comparada convertido para a moeda base: " + mCompConvParaBase);
+            textDiferenca.setText("Diferença: " + diferenca);
         }
     };
 

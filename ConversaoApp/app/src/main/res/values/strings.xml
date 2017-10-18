@@ -1,51 +1,9 @@
 <resources>
-    <string name="app_name">App Name</string>
+    <string name="app_name">Converta e Compare</string>
     <string name="comparacao">Comparação</string>
     <string name="moedas">Moedas</string>
     <string name="sobre_o_app">Sobre o App</string>
 
-    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Sed eu ipsum id nunc bibendum imperdiet nec ut libero.
-        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-        Donec eu rhoncus quam, nec eleifend tellus. Donec aliquet condimentum orci, a hendrerit sapien euismod vel.
-        Fusce in dignissim ex, sed placerat enim. Mauris feugiat placerat nisl.
-        Praesent sit amet ante congue, vulputate mauris vulputate, volutpat nulla.
-        Proin ultrices consectetur tortor, at rhoncus neque dapibus eget.
-        Donec sem mauris, sollicitudin ac mi vel, dignissim iaculis risus.
-        Morbi et sollicitudin ante, a aliquet nisl. Sed ornare velit ipsum, non efficitur magna imperdiet at.
-        Duis rhoncus purus id ipsum gravida lobortis.
-
-        Nullam ultricies lectus et velit euismod pharetra.
-        Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-        Sed tempus lectus sed mi venenatis, eu scelerisque lorem eleifend.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Curabitur felis metus, sollicitudin nec quam id, porttitor blandit diam.
-        Nulla aliquam tortor nec lectus ullamcorper cursus. Aliquam vitae sapien ligula.
-        Aenean ante tortor, feugiat at congue quis, congue ac arcu. Vestibulum condimentum pharetra sem nec pretium.
-
-        Sed semper dolor a erat feugiat dictum. Maecenas dignissim interdum nisl, eget vestibulum turpis sagittis ac.
-        Curabitur ac porttitor elit, suscipit tristique ligula. Etiam quis tempus felis.
-        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-        Nam in purus tempor, dignissim mi sed, sagittis diam.
-        Sed convallis, lacus eu pretium ullamcorper, enim tortor bibendum est, ac convallis neque tellus non erat.
-        Fusce pulvinar felis a lacus sodales porttitor. Sed augue quam, euismod eget tellus a, varius aliquet metus.
-        Vestibulum cursus faucibus blandit. Mauris nec sapien mollis, sagittis orci et, tempor ante.
-        Ut in diam et erat interdum ultrices eu quis nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-        Nulla placerat metus et mattis dignissim. Phasellus id nisl tempor, elementum quam eget, hendrerit dui.
-        Aliquam euismod commodo felis, vitae auctor neque pellentesque et.
-        Fusce vitae mi vel odio faucibus ullamcorper et in lorem. Ut eleifend lacinia elit.
-        Praesent ut erat at quam laoreet pulvinar a condimentum justo.
-        Aliquam imperdiet consequat urna, blandit blandit sem venenatis at.
-
-        Sed et porttitor orci, sit amet malesuada est. Suspendisse ex elit, eleifend vel facilisis a, tincidunt eget ligula.
-        Sed ac libero tortor. Mauris at finibus ex, non vestibulum justo. Sed et mi in lorem auctor aliquet at bibendum nisi.
-        Nullam consequat tellus sit amet lacinia laoreet.
-        Aliquam efficitur, nisi et porttitor tristique, leo eros dignissim risus, eget ullamcorper elit eros et nisl.
-        Pellentesque nec libero vulputate, venenatis nisl quis, mattis libero.
-        Nam ut augue ut sapien faucibus ultricies nec id risus. In luctus vitae libero non porta.
-        Pellentesque laoreet, est a dapibus pretium, mi sapien porta tortor, ut rhoncus dui sem eu dolor.
-        Aliquam eu accumsan justo.</string>
     <string name="moeda_a_ser_comparada">Moeda a ser comparada:</string>
     <string name="valor_do_produto_na_moeda_base">Valor do produto na moeda base:</string>
     <string name="valor_do_produto_na_moeda_a_ser_comparada">Valor do produto na moeda a ser comparada:</string>
@@ -53,6 +11,9 @@
     <string name="comparar">Comparar</string>
     <string name="moeda_compensa_base">Compensa você comprar esse produto na moeda base.</string>
     <string name="moeda_compensa_comparar">Compensa você comprar esse produto na moeda comparada.</string>
+    <string name="moeda_valores_iguais">Tanto faz onde você comprar esse produto, ele está valendo o mesmo preço nas duas moedas.</string>
+    <string name="moeda_comparada_convertido_para_moeda_base">"Valor da moeda comparada convertido para a moeda base: " + mCompConvParaBase</string>
+    <string name="diferenca">Diferença: </string>
 
     <string name="ok">OK</string>
     <string name="proximo">Próximo</string>
@@ -71,9 +32,6 @@
     <string name="GBP">GBP</string>
     <string name="reais">Reais</string>
     <string name="BRL">BRL</string>
-    
-    <string name="yuan">Yuan</string>
-    <string name="CNY">CNY</string>
 
 
     <string name="cotacao_em">Cotação em: %1$s</string>

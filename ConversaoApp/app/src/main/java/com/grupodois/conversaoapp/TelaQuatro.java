@@ -27,7 +27,6 @@ public class TelaQuatro extends AppCompatActivity {
         Double valorLibra = ((CurrencyRates) this.getApplication()).getGBP();
         Double valorIene = ((CurrencyRates) this.getApplication()).getJPY();
         Double valorReal = ((CurrencyRates) this.getApplication()).getBRL();
-        Log.i("valorReal", valorReal.toString());
         String base = ((CurrencyRates) this.getApplication()).getBase();
 
         textBase.setText(getString(R.string.cotacao_em, base));

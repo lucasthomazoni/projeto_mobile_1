@@ -162,12 +162,12 @@
             android:layout_marginLeft="@dimen/dp_10"/>
 
         <TextView
-            android:layout_width="@dimen/dp_96"
-            android:layout_height="wrap_content"
-            android:text="@string/valor_reais"
-            android:textSize="@dimen/sp_18"
-            android:gravity="center"
-            android:id="@+id/textValorReal"/>
+        android:layout_width="@dimen/dp_96"
+        android:layout_height="wrap_content"
+        android:text="@string/valor_reais"
+        android:textSize="@dimen/sp_18"
+        android:gravity="center"
+        android:id="@+id/textValorReal"/>
 
     </LinearLayout>
 </LinearLayout>
