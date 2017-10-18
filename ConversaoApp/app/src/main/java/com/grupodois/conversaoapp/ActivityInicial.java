@@ -39,7 +39,6 @@ public class ActivityInicial extends AppCompatActivity {
 
     private Button btnOK;
     private RadioButton radioButton;
-    private RadioGroup radioGroup;
     private RequestQueue requestQueue;
 
     @Override
@@ -61,9 +60,7 @@ public class ActivityInicial extends AppCompatActivity {
 
                 if (radioButton != null) {
                     String myUrl = "https://api.fixer.io/latest?base=" + radioButton.getTag().toString();
-                    Log.i("request", myUrl);
                     requisicaoHttp(myUrl);
-                    startActivity(new Intent(ActivityInicial.this, TelaDois.class));
                 } else {
                     Toast.makeText(ActivityInicial.this, "Escolha uma moeda para começar", Toast.LENGTH_LONG).show();
                 }
@@ -77,15 +74,19 @@ public class ActivityInicial extends AppCompatActivity {
         pDialog.show();
 
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>( ) {
+
+
             @Override
             public void onResponse(JSONObject response) {
 
+                JSONObject array = null;
+
+                String base;
+
                 try {
-                    String base = response.getString("base");
-                    String date = response.getString("date");
-                    Log.i("base", base);
-                    Log.i("data", date);
-                    Log.i("array", response.getString("rates").getClass().toString());
+                    array = response.getJSONObject("rates");
+                    base = response.getString("base");
+                    setRates(array, base);
                     pDialog.hide();
                 } catch (JSONException e) {
                     e.printStackTrace( );
@@ -96,11 +97,34 @@ public class ActivityInicial extends AppCompatActivity {
         }, new Response.ErrorListener( ) {
             @Override
             public void onErrorResponse(VolleyError error) {
-
+                error.printStackTrace();
             }
         });
 
         requestQueue.add(jsonObjectRequest);
+
+    }
+
+    public void setRates(JSONObject jsonObject, String base) throws JSONException {
+            try {
+                Double brl = (base.equals("BRL")) ? 1.00 : Double.valueOf(jsonObject.getString("BRL"));
+                Double usd = (base.equals("USD")) ? 1.00 : Double.valueOf(jsonObject.getString("USD"));
+                Double eur = (base.equals("EUR")) ? 1.00 : Double.valueOf(jsonObject.getString("EUR"));
+                Double gbp = (base.equals("GBP")) ? 1.00 : Double.valueOf(jsonObject.getString("GBP"));
+                Double jpy = (base.equals("JPY")) ? 1.00 : Double.valueOf(jsonObject.getString("JPY"));
+
+
+                ((CurrencyRates) this.getApplication()).setBase(base);
+                ((CurrencyRates) this.getApplication()).setBRL(brl);
+                ((CurrencyRates) this.getApplication()).setUSD(usd);
+                ((CurrencyRates) this.getApplication()).setEUR(eur);
+                ((CurrencyRates) this.getApplication()).setGBP(gbp);
+                ((CurrencyRates) this.getApplication()).setJPY(jpy);
+
+                startActivity(new Intent(ActivityInicial.this, TelaDois.class));
+            }catch (JSONException e){
+                e.printStackTrace();
+            }
 
     }
 

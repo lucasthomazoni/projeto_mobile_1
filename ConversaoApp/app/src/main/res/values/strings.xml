@@ -51,7 +51,8 @@
     <string name="valor_do_produto_na_moeda_a_ser_comparada">Valor do produto na moeda a ser comparada:</string>
     <string name="selectiona_sua_moeda_base">Selecione sua moeda base:</string>
     <string name="comparar">Comparar</string>
-    <string name="moeda_compensa">Compensa você comprar esse produto em </string>
+    <string name="moeda_compensa_base">Compensa você comprar esse produto na moeda base.</string>
+    <string name="moeda_compensa_comparar">Compensa você comprar esse produto na moeda comparada.</string>
 
     <string name="ok">OK</string>
     <string name="proximo">Próximo</string>
@@ -75,22 +76,22 @@
     <string name="CNY">CNY</string>
 
 
-    <string name="cotacao_em">Cotação em:</string>
-    <string name="conversao_para">Conversão de R$ para:</string>
+    <string name="cotacao_em">Cotação em: %1$s</string>
+    <string name="conversao_para">Conversão de %1$s para:</string>
     <string name="descricao_sobre_o_app">Aplicativo desenvolvido pelos alunos do 6º período do curso de Engenharia de Sofware da Universidade Tecnológica Federal do Paraná - Campus Dois Vizinhos. \n\n\nJuan Felipe Krassmann\nLucas Thomazoni</string>
 
-    <string name="valor_dolar">155,00</string>
-    <string name="valor_euro">166,00</string>
-    <string name="valor_iene">177,00</string>
-    <string name="valor_libra_esterlina">188,00</string>
-    <string name="valor_reais">200,00</string>
+    <string name="valor_dolar">%1$s</string>
+    <string name="valor_euro">%1$s</string>
+    <string name="valor_iene">%1$s</string>
+    <string name="valor_libra_esterlina">%1$s</string>
+    <string name="valor_reais">%1$s</string>
 
     <string-array name="moedas">
-        <item>Dólar USD</item>
-        <item>Euro EUR</item>
-        <item>Iene JPY</item>
-        <item>Libra GBP</item>
-        <item>Reais BRL</item>
+        <item>USD</item>
+        <item>EUR</item>
+        <item>JPY</item>
+        <item>GBP</item>
+        <item>BRL</item>
     </string-array>
 
 </resources>

@@ -18,18 +18,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/cotacao_em"
+            android:text=""
             android:textSize="@dimen/sp_20"
-            android:layout_marginRight="@dimen/dp_5"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/dolar"
-            android:textSize="@dimen/sp_20"/>
+            android:layout_marginRight="@dimen/dp_5"
+            android:id="@+id/cotacao_em"/>
 
     </LinearLayout>
-
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -56,7 +50,8 @@
             android:layout_height="wrap_content"
             android:text="@string/valor_dolar"
             android:textSize="@dimen/sp_18"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:id="@+id/textValorDolar"/>
 
     </LinearLayout>
 
@@ -84,7 +79,8 @@
             android:layout_height="wrap_content"
             android:text="@string/valor_euro"
             android:textSize="@dimen/sp_18"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:id="@+id/textValorEuro"/>
 
     </LinearLayout>
 
@@ -112,7 +108,8 @@
             android:layout_height="wrap_content"
             android:text="@string/valor_iene"
             android:textSize="@dimen/sp_18"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:id="@+id/textValorIene"/>
 
     </LinearLayout>
 
@@ -140,7 +137,8 @@
             android:layout_height="wrap_content"
             android:text="@string/valor_libra_esterlina"
             android:textSize="@dimen/sp_18"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:id="@+id/textValorLibra"/>
 
     </LinearLayout>
 
@@ -168,7 +166,8 @@
             android:layout_height="wrap_content"
             android:text="@string/valor_reais"
             android:textSize="@dimen/sp_18"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:id="@+id/textValorReal"/>
 
     </LinearLayout>
 </LinearLayout>

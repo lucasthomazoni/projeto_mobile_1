@@ -1,10 +1,12 @@
 package com.grupodois.conversaoapp;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 public class TelaQuatro extends AppCompatActivity {
 
@@ -13,8 +15,29 @@ public class TelaQuatro extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_quatro);
 
-        android.app.ActionBar actionBar = getActionBar();
+        TextView textBase = (TextView) findViewById(R.id.cotacao_em);
+        TextView textValorDolar = (TextView) findViewById(R.id.textValorDolar);
+        TextView textValorEuro = (TextView) findViewById(R.id.textValorEuro);
+        TextView textValorLibra = (TextView) findViewById(R.id.textValorLibra);
+        TextView textValorIene = (TextView) findViewById(R.id.textValorIene);
+        TextView textValorReal = (TextView) findViewById(R.id.textValorReal);
 
+        Double valorDolar = ((CurrencyRates) this.getApplication()).getUSD();
+        Double valorEuro = ((CurrencyRates) this.getApplication()).getEUR();
+        Double valorLibra = ((CurrencyRates) this.getApplication()).getGBP();
+        Double valorIene = ((CurrencyRates) this.getApplication()).getJPY();
+        Double valorReal = ((CurrencyRates) this.getApplication()).getBRL();
+        Log.i("valorReal", valorReal.toString());
+        String base = ((CurrencyRates) this.getApplication()).getBase();
+
+        textBase.setText(getString(R.string.cotacao_em, base));
+        textValorDolar.setText(getString(R.string.valor_dolar, valorDolar.toString()));
+        textValorEuro.setText(getString(R.string.valor_euro, valorEuro.toString()));
+        textValorIene.setText(getString(R.string.valor_iene, valorIene.toString()));
+        textValorLibra.setText(getString(R.string.valor_libra_esterlina, valorLibra.toString()));
+        textValorReal.setText(getString(R.string.valor_reais, valorReal.toString()));
+
+        android.app.ActionBar actionBar = getActionBar();
     }
 
     @Override

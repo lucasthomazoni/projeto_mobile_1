@@ -78,7 +78,7 @@
         android:id="@+id/textResultado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="RESULTADO AQUI"
+        android:text=""
         android:layout_marginTop="@dimen/dp_20"
         android:textSize="@dimen/sp_25"
         android:gravity="center"/>
