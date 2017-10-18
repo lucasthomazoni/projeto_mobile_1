@@ -59,10 +59,10 @@ public class ActivityInicial extends AppCompatActivity {
                 final JSONObject object  = new  JSONObject();
 
                 if (radioButton != null) {
-                    String myUrl = "https://api.fixer.io/latest?base=" + radioButton.getTag().toString();
+                    String myUrl = getText(R.string.url_request) + radioButton.getTag().toString();
                     requisicaoHttp(myUrl);
                 } else {
-                    Toast.makeText(ActivityInicial.this, "Escolha uma moeda para começar", Toast.LENGTH_LONG).show();
+                    Toast.makeText(ActivityInicial.this, getText(R.string.escolherMoeda) , Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -70,7 +70,7 @@ public class ActivityInicial extends AppCompatActivity {
 
     public void requisicaoHttp(final String url){
         final ProgressDialog pDialog = new ProgressDialog(this);
-        pDialog.setMessage("Carregando...");
+        pDialog.setMessage(getText(R.string.carregando));
         pDialog.show();
 
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>( ) {

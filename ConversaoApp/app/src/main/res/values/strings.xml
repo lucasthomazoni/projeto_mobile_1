@@ -12,10 +12,12 @@
     <string name="moeda_compensa_base">Compensa você comprar esse produto na moeda base.</string>
     <string name="moeda_compensa_comparar">Compensa você comprar esse produto na moeda comparada.</string>
     <string name="moeda_valores_iguais">Tanto faz onde você comprar esse produto, ele está valendo o mesmo preço nas duas moedas.</string>
-    <string name="moeda_comparada_convertido_para_moeda_base">"Valor da moeda comparada convertido para a moeda base: " + mCompConvParaBase</string>
-    <string name="diferenca">Diferença: </string>
+    <string name="moeda_comparada_convertido_para_moeda_base">Valor da moeda comparada convertido para a moeda base: %1$s</string>
+    <string name="diferenca">Diferença: %1$s</string>
 
+    <string name="url_request">https://api.fixer.io/latest?base=</string>
     <string name="ok">OK</string>
+    <string name="carregando">Carregando...</string>
     <string name="proximo">Próximo</string>
     <string name="salvar">Salvar</string>
     <string name="voltar">Voltar</string>
@@ -33,7 +35,7 @@
     <string name="reais">Reais</string>
     <string name="BRL">BRL</string>
 
-
+    <string name="escolherMoeda">Escolha uma moeda para começar</string>
     <string name="cotacao_em">Cotação em: %1$s</string>
     <string name="conversao_para">Conversão de %1$s para:</string>
     <string name="descricao_sobre_o_app">Aplicativo desenvolvido pelos alunos do 6º período do curso de Engenharia de Sofware da Universidade Tecnológica Federal do Paraná - Campus Dois Vizinhos. \n\n\nJuan Felipe Krassmann\nLucas Thomazoni</string>

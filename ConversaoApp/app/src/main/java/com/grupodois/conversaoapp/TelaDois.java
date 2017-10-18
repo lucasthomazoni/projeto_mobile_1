@@ -109,34 +109,21 @@ public class TelaDois extends AppCompatActivity {
             default:
         }
 
-
-//EAE MEN VEJA SE VC CONSEGUE RESOLVER ISSO AQUI EM BAIXO!!!!!
-//ASSIM, ACRESCENTEI DUAS VARIÁVEIS,
-//UMA COM O VALOR DA MOEDA COMPARADA CONVERTIDO PARA A MOEDA BASE
-//E UMA COM A DIFERENÇA DE PREÇOS.
-//MAS HÁ UM PROBLEMA, EU NÃO SEI COMO MOSTRAR O VALOR DAS VARIÁVEIS NO TEXTVIEW
-//SEM SER DO JEITO QUE EU COLOQUEI.
-//O PROBLEMA É QUE DO JEITO QUE EU COLOQUEI ELE NÃO GUARDA AS STRINGS, MAS SIM TEXTO SOLTO.
-//
-//VÊ SE TU SABE E ME DE UM TOQUE. FLWW.
-
-
         Double resultado = moedaBase * taxa;
         Double mCompConvParaBase = moedaComparar / taxa;
         Double diferenca = mCompConvParaBase - moedaBase;
 
         if (resultado < moedaComparar){
             textResultado.setText(getText(R.string.moeda_compensa_base));
-            textConvertido.setText("Valor da moeda comparada convertido para a moeda base: " + mCompConvParaBase);
-            textDiferenca.setText("Diferença: " + diferenca);
+            textConvertido.setText(getString(R.string.moeda_comparada_convertido_para_moeda_base, mCompConvParaBase.toString()));
+            textDiferenca.setText(getString(R.string.diferenca,  diferenca.toString()));
         }else if(resultado > moedaComparar){
             textResultado.setText(getText(R.string.moeda_compensa_comparar));
-            textConvertido.setText("Valor da moeda comparada convertido para a moeda base: " + mCompConvParaBase);
-            textDiferenca.setText("Diferença: " + diferenca);
+            textConvertido.setText(getString(R.string.moeda_comparada_convertido_para_moeda_base, mCompConvParaBase.toString()));
+            textDiferenca.setText(getString(R.string.diferenca, diferenca.toString()));
         }else {
             textResultado.setText(getText(R.string.moeda_valores_iguais));
-            textConvertido.setText("Valor da moeda comparada convertido para a moeda base: " + mCompConvParaBase);
-            textDiferenca.setText("Diferença: " + diferenca);
+            textConvertido.setText(getString(R.string.moeda_comparada_convertido_para_moeda_base, mCompConvParaBase.toString()));
         }
     };
 
